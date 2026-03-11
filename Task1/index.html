@@ -2,49 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Landing Page</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>My Website</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+<div class="calculator">
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Welcome to My Landing Page</h2>
-        <p>Create beautiful websites using HTML and CSS.</p>
-        <button>Get Started</button>
-    </section>
+    <input type="text" id="display" disabled>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="box">
-            <h3>Fast</h3>
-            <p>Our website loads quickly and smoothly.</p>
-        </div>
+    <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="deleteLast()">DEL</button>
+        <button onclick="appendValue('%')">%</button>
+        <button onclick="appendValue('/')">/</button>
 
-        <div class="box">
-            <h3>Responsive</h3>
-            <p>Works perfectly on mobile, tablet and desktop.</p>
-        </div>
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('*')">*</button>
 
-        <div class="box">
-            <h3>Easy to Use</h3>
-            <p>Simple design and user-friendly interface.</p>
-        </div>
-    </section>
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('-')">-</button>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 My Landing Page | All Rights Reserved</p>
-    </footer>
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="appendValue('+')">+</button>
+
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
